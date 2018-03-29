@@ -35,9 +35,9 @@ Command for reading memory of transceiver.
 ### wXYYAABBCC (WXYYAABBCC)
 Command for writing to the memory of transceiver.
 
-w — (1 byte) — Write command. Symbol register is responsible for the subsequent read after write. If you use uppercase (W) after the recording is complete programmer will make reading the memory area which has been overwritten. To write without return a write result of lower case (w) must be used.
+- w — (1 byte) — Write command. Symbol register is responsible for the subsequent read after write. If you use uppercase (W) after the recording is complete programmer will make reading the memory area which has been overwritten. To write without return a write result of lower case (w) must be used.
 
-X — (1 byte) — Transceiver type (1 - SFP, 2 - SFP+).
+- X — (1 byte) — Transceiver type (1 - SFP, 2 - SFP+).
 
 YY — (2 bytes) — The device address on the I2C bus.
 
