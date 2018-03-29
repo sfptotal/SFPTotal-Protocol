@@ -52,7 +52,7 @@ Command for writing to the memory of transceiver.
 
 ### Examples
 
-Write code 128 bytes in Table A0 Upper address 00 for SFP transceiver:
+Write 128 bytes in Table A0h offset 00h for SFP transceiver:
 
       W1A000007F
       
@@ -61,8 +61,8 @@ Write code 128 bytes in Table A0 Upper address 00 for SFP transceiver:
       001A000045585039364C30313120202020202020313130383039202068F00302
       45585452454D45204C5200000000000000000000000000000000000000000000
       
-Write password 0123 (HEX: 30h 31h 32h 33h) in Table A2 address 7B for SFP+ transceiver:
+Write password "0123" (HEX: 30h 31h 32h 33h) in Table A2h oofset 7Bh for SFP+ transceiver:
 
       w2A2007B0330313233
       
-Note: Write command should type without newline characters and spaces. Shifts are given for the convenience display of the material in the examples.
+#### Note: Write command should type without newline characters and spaces. Shifts are given for the convenience display of the material in the examples.
