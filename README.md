@@ -27,3 +27,39 @@ Command for reading memory of transceiver.
       0020202000000000313047422D5346502D4C522D45202020312E3020051E00F9
       001A000045585039364C30313120202020202020313130383039202068F00302
       45585452454D45204C5200000000000000000000000000000000000000000000
+
+--
+
+wXYYAABBCC (WXYYAABBCC)
+Command for writing to the memory of transceiver.
+
+w — (1 byte) — Write command. Symbol register is responsible for the subsequent read after write. If you use uppercase (W) after the recording is complete programmer will make reading the memory area which has been overwritten. To write without return a write result of lower case (w) must be used.
+
+X — (1 byte) — Transceiver type (1 - SFP, 2 - SFP+).
+
+YY — (2 bytes) — The device address on the I2C bus.
+
+AA — (2 bytes) — Address of additional table.
+
+BB — (2 bytes) — Address table. Value in HEX. For example: A0 or A2.
+
+СС — (2 bytes) — Write byte count. Hexadecimal value reduced by one. For example, for writing 128 bytes you should set this parameter in 7F (0x7F in HEX, 127 in decimal).
+
+{DATA} — Write data in HEX, 2 characters for each byte of the parcel.
+
+
+Examples
+
+Write code 128 bytes in Table A0 Upper address 00 for SFP transceiver:
+
+      W1A000007F
+      03040720000000000000000667000A64000000004F454D202020202020202020
+      0020202000000000313047422D5346502D4C522D45202020312E3020051E00F9
+      001A000045585039364C30313120202020202020313130383039202068F00302
+      45585452454D45204C5200000000000000000000000000000000000000000000
+      
+Write password 0123 (HEX: 30h 31h 32h 33h) in Table A2 address 7B for SFP+ transceiver:
+
+      w2A2007B0330313233
+      
+Note: Write command should type without newline characters and spaces. Shifts are given for the convenience display of the material in the examples.
