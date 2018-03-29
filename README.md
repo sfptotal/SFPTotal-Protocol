@@ -65,4 +65,4 @@ Write password "0123" (HEX: 30h 31h 32h 33h) in Table A2h oofset 7Bh for SFP+ tr
 
       w2A2007B0330313233
       
-#### Note: Write command should type without newline characters and spaces. Shifts are given for the convenience display of the material in the examples.
+#### Note: Write command should be typed without newline characters and spaces. Shifts are given for the convenience display of the material in the examples.
