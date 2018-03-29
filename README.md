@@ -39,15 +39,15 @@ Command for writing to the memory of transceiver.
 
 - X — (1 byte) — Transceiver type (1 - SFP, 2 - SFP+).
 
-YY — (2 bytes) — The device address on the I2C bus.
+- YY — (2 bytes) — The device address on the I2C bus.
 
-AA — (2 bytes) — Address of additional table.
+- AA — (2 bytes) — Address of additional table.
 
-BB — (2 bytes) — Address table. Value in HEX. For example: A0 or A2.
+- BB — (2 bytes) — Address table. Value in HEX. For example: A0 or A2.
 
-СС — (2 bytes) — Write byte count. Hexadecimal value reduced by one. For example, for writing 128 bytes you should set this parameter in 7F (0x7F in HEX, 127 in decimal).
+- СС — (2 bytes) — Write byte count. Hexadecimal value reduced by one. For example, for writing 128 bytes you should set this parameter in 7F (0x7F in HEX, 127 in decimal).
 
-{DATA} — Write data in HEX, 2 characters for each byte of the parcel.
+- {DATA} — Write data in HEX, 2 characters for each byte of the parcel.
 
 
 ### Examples
