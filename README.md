@@ -3,7 +3,8 @@ Description of the command protocol for programmers SFPTotal
 
 
 ## Read and write commands
-rXYYAABBCC (RXYYAABBCC)
+
+### rXYYAABBCC (RXYYAABBCC) ###
 
 Command for reading memory of transceiver.
 
@@ -28,9 +29,9 @@ Command for reading memory of transceiver.
       001A000045585039364C30313120202020202020313130383039202068F00302
       45585452454D45204C5200000000000000000000000000000000000000000000
 
---
 
-wXYYAABBCC (WXYYAABBCC)
+
+### wXYYAABBCC (WXYYAABBCC)
 Command for writing to the memory of transceiver.
 
 w — (1 byte) — Write command. Symbol register is responsible for the subsequent read after write. If you use uppercase (W) after the recording is complete programmer will make reading the memory area which has been overwritten. To write without return a write result of lower case (w) must be used.
