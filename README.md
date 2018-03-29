@@ -2,14 +2,14 @@
 Description of the command protocol for programmers SFPTotal
 
 
-#Read and write
+##Read and write commands
 rXYYAABBCC (RXYYAABBCC)
 Command for reading memory of transceiver.
 
 r1A000007F
 Read 128 byte(s) Table 0xA0 from 0x00
 
-##    00  01  02  03  04  05  06  07  08  09  0A  0B  0C  0D  0E  0F
+      00  01  02  03  04  05  06  07  08  09  0A  0B  0C  0D  0E  0F
 
 00 :  03  04  07  20  00  00  00  00  00  00  00  06  67  00  0A  64
 01 :  00  00  00  00  4F  45  4D  20  20  20  20  20  20  20  20  20
