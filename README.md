@@ -1,4 +1,4 @@
-# SFPTotal-Protocol
+# SFPTotal Protocol
 Description of the command protocol for programmers SFPTotal
 
 
