@@ -1,5 +1,5 @@
 # SFPTotal Protocol
-Description of the command protocol for programmers SFPTotal
+There is description of the command line protocol for SFPTotal programming boards.
 
 
 ## Read and write commands
